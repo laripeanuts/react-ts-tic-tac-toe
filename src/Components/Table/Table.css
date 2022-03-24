@@ -1,0 +1,26 @@
+.ticTacToe {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    height: 450px;    
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 140px;
+    gap: 15px;
+}
+
+.square {
+    background: var(--grey);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    
+    border-radius: 20px;
+    gap: 5px;
+}

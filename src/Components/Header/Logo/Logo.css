@@ -1,0 +1,8 @@
+.logoText {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
