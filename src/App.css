@@ -7,20 +7,10 @@
 }
 
 body {
-    height: 100%;
-    /* background: linear-gradient(to right,#0D47A1,#1565C0); */
     display: flex;
     justify-content: center;
-    item-align: center;
-    align-content: start;
-    flex-wrap: wrap;
+    /* align-content: start; */
     font-family: 'Open Sans', sans-serif;
     background: linear-gradient(to right,#393185,#411b74);
 }
 
-.buttons {
-    display: flex;
-    padding-top: 30px;
-    justify-content: space-between;
-    gap: 10px;
-}

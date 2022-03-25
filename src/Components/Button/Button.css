@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
+.buttons {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 .btnPrimary {
   display: flex;
   justify-content: center;
