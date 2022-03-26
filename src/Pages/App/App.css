@@ -1,0 +1,26 @@
+:root {
+    --purple: #393185;
+    --pink: #ec1751;
+    --yellow: #e8b405;
+    --yellowDarker: #ffc70f;
+    --white: #ebebeb;
+    --grey: #c5c6c6;
+    --greyDarker: #a9a5cf;
+}
+
+body {
+    display: flex;
+    direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right,#393185,#411b74);
+}
+
+.main {
+    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+

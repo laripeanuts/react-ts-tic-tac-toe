@@ -1,20 +1,21 @@
 import { FC } from "react";
 import "./Button.css";
 
-interface ButtonProps {
+type ButtonProps = {
   children: React.ReactNode,
   image: string
+  onClick: () => void
 }
 
-export const ButtonPrimary:FC<ButtonProps> = ({ image, children }) => (
-  <button className="btnPrimary">
-    <img src={ image }alt="reload" width="30px"></img>
+export const ButtonPrimary = ({ image, children, onClick }: ButtonProps) => (
+  <button className="button" id="btnPrimary" onClick={onClick}>
+    <img src={image} alt="reload" width="30px"></img>
     {children}
   </button>
 );
 
-export const ButtonSecondary:FC = ({ children}) => (
-  <button className="btnSecondary">
+export const ButtonSecondary: FC = ({ children }) => (
+  <button className="button" id="btnSecondary">
     {children}
   </button>
 );

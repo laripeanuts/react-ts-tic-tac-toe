@@ -6,15 +6,13 @@ export const Header: FC = ({ children }) => (
   <header className="header">
     <Logo>
       <p>
-        ox
-        <p>xo</p>
+        Player X
       </p>
     </Logo>
     {children}
     <Logo>
       <p>
-        xo
-        <p>ox</p>
+        Player O
       </p>
     </Logo>
   </header>

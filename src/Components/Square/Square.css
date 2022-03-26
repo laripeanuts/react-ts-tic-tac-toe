@@ -1,0 +1,32 @@
+.square {
+    background: var(--grey);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    gap: 5px;
+}
+
+.square:hover {
+    background: var(--greyDarker);
+}
+
+.item {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-shadow: 4px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+#O {
+  color: var(--pink);
+}
+
+#X {
+  color: var(--yellow);
+}

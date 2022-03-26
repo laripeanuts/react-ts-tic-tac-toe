@@ -2,14 +2,15 @@
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
+  text-align: center;
 }
 
 h1 {
   font-family: 'Praise', cursive;
-  font-size: 4em;
+  font-size: 3.5em;
   text-align: center;
   color: var(--pink);
   text-shadow: 4px 3px 0 rgba(0, 0, 0, 0.3);

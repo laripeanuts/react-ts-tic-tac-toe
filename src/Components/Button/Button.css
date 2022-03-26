@@ -1,25 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 
 .buttons {
-    display: flex;
-    padding-top: 30px;
-    justify-content: space-between;
-    gap: 10px;
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
 }
 
-.btnPrimary {
+.button {
+  padding: 20px 30px 20px 30px;
   display: flex;
   justify-content: center;
   gap: 10px;
-  background: var(--yellow);
-  padding: 20px 30px 20px 30px;
+
   width: 100%;
   border: none;
   border-radius: 20px;
-  color: var(--white);
-  font-family: 'Secular One', sans-serif;
+  font-family: "Secular One", sans-serif;
   /* font-weight: bold; */
   font-size: 1.3em;
   text-transform: uppercase;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+#btnPrimary {
+  background: var(--yellow);
+  color: var(--white);
+}
+
+#btnPrimary:hover {
+  background: var(--yellowDarker);
+}
+
+#btnSecondary {
+  background: var(--white);
+  color: var(--yellow);
 }

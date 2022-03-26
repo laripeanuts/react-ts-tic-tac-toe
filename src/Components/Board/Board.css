@@ -1,4 +1,4 @@
-.ticTacToe {
+.board {
     display: flex;
     justify-content: space-between;
     width: 390px;
@@ -12,16 +12,4 @@
     justify-content: space-between;
     gap: 15px;
     width: 100%;
-}
-
-.square {
-    background: var(--grey);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    padding: 10px;
-
-    border-radius: 20px;
-    gap: 5px;
 }
