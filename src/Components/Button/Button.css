@@ -33,7 +33,9 @@
   background: var(--yellowDarker);
 }
 
-#btnSecondary {
-  background: var(--white);
-  color: var(--yellow);
+#btnPrimary:disabled {
+  background: var(--grey);
+  color: var(--white);
+  filter: grayscale(100%);
 }
+

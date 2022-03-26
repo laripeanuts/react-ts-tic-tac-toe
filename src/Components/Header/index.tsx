@@ -1,19 +1,23 @@
-import { FC } from "react";
-import { Logo } from "./Logo";
-import "./Header.css"
+import { useEffect, useState } from "react";
+import { Turn } from "./Turn";
+import { ItemValue } from "../../Types";
+import App from "../../Pages/App";
+import "./Header.css";
 
-export const Header: FC = ({ children }) => (
-  <header className="header">
-    <Logo>
-      <p>
-        Player X
-      </p>
-    </Logo>
-    {children}
-    <Logo>
-      <p>
-        Player O
-      </p>
-    </Logo>
-  </header>
-);
+type HeaderProps = {
+  children: React.ReactNode;
+  item?: ItemValue;
+  active?: boolean;
+};
+
+export const Header = ({ children, item, active }: HeaderProps) => {
+  active = item === "X" ? true : false;
+
+  return (
+    <header className="header">
+      <Turn turn={active}>Player X</Turn>
+        {children}
+      <Turn turn={!active}>Player O</Turn>
+    </header>
+  );
+};

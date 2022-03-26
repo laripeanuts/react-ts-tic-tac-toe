@@ -1,5 +1,6 @@
 :root {
     --purple: #393185;
+    --purpleDark: #312a6a;
     --pink: #ec1751;
     --yellow: #e8b405;
     --yellowDarker: #ffc70f;
@@ -19,8 +20,27 @@ body {
 
 .main {
     max-width: 390px;
+    padding: 20px;
+    background: var(--purpleDark);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+    border-radius: 20px;
+}
+
+.alert {
+    font-family: 'Varela Round', sans-serif;
+    font-size: .6em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 10px 0px 10px;
+    width: 100%;
+    color: var(--white);
+    background: var(--yellow);
+    border-radius: 5px;
+}
 

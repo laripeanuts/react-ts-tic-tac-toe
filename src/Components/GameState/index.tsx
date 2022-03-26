@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ItemValue, BoardState, GameState } from "../Types";
+import { ItemValue, BoardState, GameState, Player } from "../../Types";
 
 const newGameState = () => Array<ItemValue>(9).fill(null);
 
@@ -30,40 +30,40 @@ const validateWinner = (boardState: BoardState) => {
   return null;
 };
 
-// Lógica do professor Rodrigo Sol
-// const checkWin = function (boardState: BoardState) {
-//   for (let i = 0; i < boardState.length; i++) {
-//     if (
-//       boardState[i][0] === boardState[i][1] &&
-//       boardState[i][1] === boardState[i][2]
-//     ) {
-//       return boardState[i][0];
-//     }
-//   }
-//   for (let i = 0; i < boardState.length; i++) {
-//     if (
-//       boardState[0][i] === boardState[1][i] &&
-//       boardState[1][i] === boardState[2][i]
-//     ) {
-//       return boardState[0][i];
-//     }
-//   }
-//   if (
-//     boardState[0][0] === boardState[1][1] &&
-//     boardState[1][1] === boardState[2][2]
-//   ) {
-//     return boardState[0][0];
-//   }
-//   if (
-//     boardState[0][2] === boardState[1][1] &&
-//     boardState[1][1] === boardState[2][0]
-//   ) {
-//     return boardState[0][2];
-//   }
-//   return false;
-// };
+//Lógica do professor Rodrigo Sol
+const checkWin = function (board: BoardState[]) {
+  for (let i = 0; i < board.length; i++) {
+    if (
+      board[i][0] === board[i][1] &&
+      board[i][1] === board[i][2]
+    ) {
+      return board[i][0];
+    }
+  }
+  for (let i = 0; i < board.length; i++) {
+    if (
+      board[0][i] === board[1][i] &&
+      board[1][i] === board[2][i]
+    ) {
+      return board[0][i];
+    }
+  }
+  if (
+    board[0][0] === board[1][1] &&
+    board[1][1] === board[2][2]
+  ) {
+    return board[0][0];
+  }
+  if (
+    board[0][2] === board[1][1] &&
+    board[1][1] === board[2][0]
+  ) {
+    return board[0][2];
+  }
+  return false;
+};
 
-export function useGameState() {
+export const useGameState = () => {
   const [gameState, setGameState] = useState<GameState>({
     history: [newGameState()],
     play: 0,
@@ -76,7 +76,7 @@ export function useGameState() {
     });
   }
 
-  function handleClick(square: number) {
+  const handleClick = (square: number) => {
     const history = gameState.history.slice(0, gameState.play + 1);
     const boardState = history[history.length - 1];
     if (validateWinner(boardState) || boardState[square]) {
@@ -91,27 +91,23 @@ export function useGameState() {
     });
   };
 
-  type player = {
-    score?: number;
-    player: string;
-    turn: boolean;
-  }
-  
   const now = gameState.history[gameState.play];
   const playerTurn = gameState.play % 2 === 0;
   const winner = validateWinner(now);
+  const draw = !winner && gameState.play >= 9;
 
-  const playerX: player = {
+  const playerX: Player = {
     score: 0,
     player: "X",
     turn: playerTurn,
-  }
+  };
 
-  const playerO = {
+  const playerO: Player = {
     score: 0,
     player: "O",
     turn: !playerTurn,
-  }
+  };
+
 
   return {
     gameState,
@@ -120,6 +116,7 @@ export function useGameState() {
     playerX,
     playerO,
     winner,
+    draw,
     handleClick,
     resetGameState,
   };

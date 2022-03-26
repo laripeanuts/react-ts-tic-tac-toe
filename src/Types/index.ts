@@ -8,4 +8,10 @@ type GameState = {
   play: number;
 };
 
-export type { ItemValue, BoardState, GameState };
+type Player = {
+  score?: number;
+  player: string;
+  turn: boolean;
+};
+
+export type { ItemValue, BoardState, GameState, Player };

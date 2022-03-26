@@ -10,12 +10,11 @@ type BoardProps = {
   onClick: (square: number) => void,
 };
 
-export const Board = ({ board, onClick, playerTurn }: BoardProps) => {
+export const Board = ({ board, onClick }: BoardProps) => {
   const newProps = (square: number): SquareProps => {
     return {
       item: board[square],
       onClick: () => onClick(square),
-      playerTurn: playerTurn,
     };
   };
 
