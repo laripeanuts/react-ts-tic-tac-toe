@@ -1,5 +1,5 @@
 # Tic Tac Toe - [DEMO](https://tic-tac-toe-three-gilt.vercel.app/)
-[Versão em português](README-ptbr.mdREADME.md)
+[Versão em português](https://github.com/laripeanuts/react-ts-tic-tac-toe/blob/main/README-ptbr.md)
 
 ## 🎯 Pré-requisitos
 
