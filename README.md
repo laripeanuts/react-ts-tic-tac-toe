@@ -12,9 +12,9 @@ Develop a project that applied the fundamental concepts of React and fulfilled t
 
 ## 🥳 Jogo
 <p align="center">
-  <img src="./../Public/Assets/larissa-tictactie1.png" alt="inicio" width="250">
-  <img src="./../Public/Assets/larissa-tictactie2.png" alt="inicio" width="250">
-  <img src="./../Public/Assets/larissa-tictactie3.png" alt="inicio" width="250">
+  <img src="https://github.com/laripeanuts/react-ts-tic-tac-toe/blob/main/public/Assets/larissa-tictactie1.png" alt="start" width="250">
+  <img src="https://github.com/laripeanuts/react-ts-tic-tac-toe/blob/main/public/Assets/larissa-tictactie2.png" alt="win" width="250">
+  <img src="https://github.com/laripeanuts/react-ts-tic-tac-toe/blob/main/public/Assets/larissa-tictactie3.png" alt="draw" width="250">
 </p>
 
 > the app states
