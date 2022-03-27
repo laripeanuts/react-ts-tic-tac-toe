@@ -1,15 +1,15 @@
 .board {
-    display: flex;
-    justify-content: space-between;
-    width: 390px;
-    height: 390px;
-    gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  height: 350px;
+  gap: 15px;
 }
 
 .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 15px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
 }

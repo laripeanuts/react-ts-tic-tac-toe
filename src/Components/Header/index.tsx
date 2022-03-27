@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
 import { Turn } from "./Turn";
 import { ItemValue } from "../../Types";
-import App from "../../Pages/App";
 import "./Header.css";
 
 type HeaderProps = {
@@ -16,7 +14,7 @@ export const Header = ({ children, item, active }: HeaderProps) => {
   return (
     <header className="header">
       <Turn turn={active}>Player X</Turn>
-        {children}
+      {children}
       <Turn turn={!active}>Player O</Turn>
     </header>
   );

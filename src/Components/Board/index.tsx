@@ -1,13 +1,12 @@
-import { Square, SquareProps } from "../Square"
+import { Square, SquareProps } from "../Square";
 import { BoardState } from "../../Types";
-
 
 import "./Board.css";
 
 type BoardProps = {
-  board: BoardState,
-  playerTurn?: boolean
-  onClick: (square: number) => void,
+  board: BoardState;
+  playerTurn?: boolean;
+  onClick: (square: number) => void;
 };
 
 export const Board = ({ board, onClick }: BoardProps) => {

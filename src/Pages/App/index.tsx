@@ -1,10 +1,10 @@
-import './App.css';
-import { Board } from '../../Components/Board';
-import { Header } from '../../Components/Header/';
-import { ButtonPrimary } from '../../Components/Button/';
-import { useGameState } from '../../Components/GameState/';
+import "./App.css";
+import { Board } from "../../Components/Board";
+import { Header } from "../../Components/Header/";
+import { ButtonPrimary } from "../../Components/Button/";
+import { useGameState } from "../../Components/GameState/";
 
-function App() {
+const App = () => {
   const {
     gameState,
     now,
@@ -17,18 +17,12 @@ function App() {
     resetGameState,
   } = useGameState();
 
-  const drawShow = () => (
-    draw ? "Oops! It's a draw!" : null
-  );
+  const drawShow = () => (draw ? "Oops... Empatou!" : null);
 
-  const winnerShow = () => (
-    winner ? `Player ${winner} wins!` : null
-  );
+  const winnerShow = () => (winner ? `Player ${winner} ganhou!` : null);
 
-  const thereIsWinner = () => (
-    winner !== null ? true : false
-  );
-  
+  const thereIsWinner = () => (winner !== null ? true : false);
+
   const message = () => {
     if (thereIsWinner()) {
       return winnerShow();
@@ -37,14 +31,14 @@ function App() {
     } else {
       return "Bom jogo!";
     }
-  }
+  };
 
   return (
     <div className="App">
       <main className="main">
         <div className="alert">{message()}</div>
         <Header item={`${playerTurn ? "X" : "O"}`}>
-          <h1>Tic Tac Toe</h1>
+          <h1>TicTacToe</h1>
         </Header>
         <Board board={now} onClick={handleClick} />
         <div className="buttons">

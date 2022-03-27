@@ -1,4 +1,3 @@
-import { ItemValue } from "../../../Types";
 import "./Turn.css";
 
 export type TurnProps = {
@@ -8,8 +7,6 @@ export type TurnProps = {
 
 export const Turn = ({ turn, children }: TurnProps) => {
   return (
-    <p className={`${turn ? "playerActive" : "playerInactive"}`}>
-      {children}
-    </p>
+    <p className={`${turn ? "playerActive" : "playerInactive"}`}>{children}</p>
   );
 };

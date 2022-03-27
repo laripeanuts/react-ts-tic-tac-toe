@@ -9,9 +9,7 @@ export type SquareProps = {
 export const Square = ({ item, onClick }: SquareProps) => {
   return (
     <button className="square" onClick={onClick}>
-      <div className={`item ${item}`}>
-        {item}
-      </div>
+      <div className={`item ${item}`}>{item}</div>
     </button>
   );
 };

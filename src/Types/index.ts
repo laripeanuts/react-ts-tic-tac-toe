@@ -1,4 +1,4 @@
-// Definição das estrturas de dados do estado do jogo
+// Definição das estruturas de dados do estado do jogo
 type ItemValue = "X" | "O" | null;
 
 type BoardState = ItemValue[];
