@@ -33,7 +33,6 @@ body {
 .main {
   max-width: 390px;
   padding: 20px;
-  background: var(--purpleDark);
   display: flex;
   flex-direction: column;
   justify-content: center;
