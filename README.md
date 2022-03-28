@@ -11,11 +11,11 @@ Develop a project that applied the fundamental concepts of React and fulfilled t
 
 
 ## 🥳 Jogo
-<p align="center">
+<p align="left">
   <img src="./.github/tictactoe.gif" alt="start" width="250">
-  <img src="./.github/larissa-tictactie1.png" alt="start" width="250">
+<!--   <img src="./.github/larissa-tictactie1.png" alt="start" width="250">
   <img src="./.github/larissa-tictactie2.png" alt="win" width="250">
-  <img src="./.github/larissa-tictactie3.png" alt="draw" width="250">
+  <img src="./.github/larissa-tictactie3.png" alt="draw" width="250"> -->
 </p>
 
 > the app states
