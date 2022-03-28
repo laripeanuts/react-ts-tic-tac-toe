@@ -1,5 +1,5 @@
 import "./App.css";
-import "animate.css";
+import "../../Utils/animate.css";
 import { Alert } from "../../Components/Alert";
 import { Board } from "../../Components/Board";
 import { ButtonPrimary } from "../../Components/Button/";
