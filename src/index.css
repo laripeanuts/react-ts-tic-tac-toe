@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
+  background: linear-gradient(to right, #393185, #411b74);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
