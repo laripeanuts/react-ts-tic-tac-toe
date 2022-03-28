@@ -1,7 +1,7 @@
 # Tic Tac Toe - [DEMO](https://tictactoe-larissarabelo.vercel.app/)
 [Versão em português](https://github.com/laripeanuts/react-ts-tic-tac-toe/blob/main/README-ptbr.md)
 
-## 🎯 Gols
+## 🎯 Goals
 
 Develop a project that applied the fundamental concepts of React and fulfilled the following requirements::
 
