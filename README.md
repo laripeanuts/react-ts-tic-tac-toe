@@ -1,16 +1,18 @@
 # Tic Tac Toe - [DEMO](https://tictactoe-larissarabelo.vercel.app/)
 [Versão em português](https://github.com/laripeanuts/react-ts-tic-tac-toe/blob/main/README-ptbr.md)
 
-## 🎯 Pré-requisitos
+## 🎯 Gols
 
 Develop a project that applied the fundamental concepts of React and fulfilled the following requirements::
 
 - [x] Use `create-react-app`
 - [x] Develop with TypeScript
 - [x] Were a functional game
+- [ ] Make a Scoreboard
+- [ ] Create a modal to show winner and draw
 
 
-## 🥳 Jogo
+## 🥳 Game
 <p align="left">
   <img src="./.github/tictactoe.gif" alt="start" width="250">
 <!--   <img src="./.github/larissa-tictactie1.png" alt="start" width="250">

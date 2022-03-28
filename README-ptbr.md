@@ -8,6 +8,8 @@ Desenvolver um projeto que aplicasse os conceitos fundamentais do React e cumpri
 - [x] Criado através do `create-react-app`
 - [x] Desenvolvido com TypeScript
 - [x] Fosse um jogo funcional
+- [ ] Criar placar
+- [ ] Mostrar vencedor e empate em um alerta do tipo modal
 
 
 ## 🥳 Jogo
