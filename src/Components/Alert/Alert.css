@@ -1,0 +1,14 @@
+#alert {
+    font-family: 'Varela Round', sans-serif;
+    font-size: .6em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 10px 0px 10px;
+    width: 100%;
+    color: var(--white);
+    background: var(--yellow);
+    border-radius: 5px;
+}
