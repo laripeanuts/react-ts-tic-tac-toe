@@ -1,4 +1,4 @@
-# Tic Tac Toe - [DEMO](https://tic-tac-toe-three-gilt.vercel.app/)
+# Tic Tac Toe - [DEMO](https://tictactoe-larissarabelo.vercel.app/)
 [Versão em português](https://github.com/laripeanuts/react-ts-tic-tac-toe/blob/main/README-ptbr.md)
 
 ## 🎯 Pré-requisitos
@@ -12,9 +12,10 @@ Develop a project that applied the fundamental concepts of React and fulfilled t
 
 ## 🥳 Jogo
 <p align="center">
-  <img src="https://github.com/laripeanuts/react-ts-tic-tac-toe/blob/main/public/Assets/larissa-tictactie1.png" alt="start" width="250">
-  <img src="https://github.com/laripeanuts/react-ts-tic-tac-toe/blob/main/public/Assets/larissa-tictactie2.png" alt="win" width="250">
-  <img src="https://github.com/laripeanuts/react-ts-tic-tac-toe/blob/main/public/Assets/larissa-tictactie3.png" alt="draw" width="250">
+  <img src="./.github/tictactoe.gif" alt="start" width="250">
+  <img src="./.github/larissa-tictactie1.png" alt="start" width="250">
+  <img src="./.github/larissa-tictactie2.png" alt="win" width="250">
+  <img src="./.github/larissa-tictactie3.png" alt="draw" width="250">
 </p>
 
 > the app states
